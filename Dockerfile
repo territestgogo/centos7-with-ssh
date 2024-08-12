@@ -1,5 +1,5 @@
 FROM centos:7
-MAINTAINER TerriHamLssss
+MAINTAINER TerriHamLz
 LABEL version="1.0" location="India" type="centos-with-ssh"
 
 # Remove the existing CentOS-Base.repo and create a new one using printf
