@@ -7,4 +7,4 @@ Step 2:
 docker build -t "Image Name" .
 
 Step 3:
-docker container run -it --name=ssh -p 2222:22 "Image Name" bash
+docker run -it --name=ssh -p 2222:22 "Image Name" bash
