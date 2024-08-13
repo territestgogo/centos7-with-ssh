@@ -28,9 +28,8 @@ gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7\n' > /etc/yum.repos.d/CentOS
 
 # Update and install necessary packages
 RUN yum update -y && \
-    yum install -y gcc openssl-devel bzip2-devel libffi-devel zlib-devel wget make
+    yum install -y gcc openssl-devel bzip2-devel libffi-devel zlib-devel wget make openssh* vim initscripts
 
-RUN yum install openssh* -y;yum install vim -y;yum install initscripts -y;
 # Download and install Python 3.9.16
 RUN wget https://www.python.org/ftp/python/3.9.16/Python-3.9.16.tgz && \
     tar xzf Python-3.9.16.tgz && \
